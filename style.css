@@ -1,6 +1,7 @@
 div#com-fortnight-status-bar {
   position: fixed;
   bottom: -1px;
+  z-index: 1000;
   background: -webkit-linear-gradient(top, #fff 0px, #b0b0b0 1px, #a7a7a7);
   color: #333;
   text-shadow: 0 1px 0 #d0d0d0;
@@ -18,7 +19,6 @@ div#com-fortnight-status-bar {
 div#com-fortnight-status-bar.active {
   opacity: 1;
   -webkit-transition: opacity 100ms ease-in;
-  z-index: 1000;
 }
 
 div#com-fortnight-status-bar:hover {
