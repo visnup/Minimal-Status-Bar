@@ -41,6 +41,8 @@ if (window.top === window) {
       statusBar.innerText = 'Download “' + href + '”';
     } else if (e.ctrlKey) {
       statusBar.innerText = 'Display a menu for “' + href + '”';
+    } else if (el.target) {
+      statusBar.innerText = 'Open “' + href + '” in a new tab';
     } else {
       statusBar.innerText = 'Go to “' + href + '”';
     }
