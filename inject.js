@@ -13,22 +13,28 @@ if (window.top === window) {
       el = el.parentNode;
 
     if (el && el.attributes.href)
-      displayStatus(el.attributes.href.value);
+      displayStatus(el, e);
     else
       hideStatus();
   }
 
-  function displayStatus(href) {
+  function displayStatus(el, e) {
     if (!statusBar) {
       statusBar = document.createElement('div');
       statusBar.id = 'com-fortnight-status-bar';
       document.body.appendChild(statusBar);
     }
 
-    statusBar.innerText = 'Go to “' + href + '”';
-    setTimeout(function() {
-      statusBar.className = 'active';
-    }, 1);
+    var href = el.attributes.href.value
+      , email = href.match(/^mailto:([^?]+)(\?subject=([^&]+))?/i);
+    if (email) {
+      statusBar.innerText = 'Send email to ' + email[1];
+      if (email[3])
+        statusBar.innerText += ' with subject “' + email[3] + '”';
+    } else {
+      statusBar.innerText = 'Go to “' + href + '”';
+    }
+    setTimeout(function() { statusBar.className = 'active'; }, 1);
   }
 
   function hideStatus() {
