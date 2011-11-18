@@ -30,7 +30,7 @@ if (window.top === window) {
     if (email) {
       statusBar.innerText = 'Send email to ' + email[1];
       if (email[3])
-        statusBar.innerText += ' with subject “' + email[3] + '”';
+        statusBar.innerText += ' with subject “' + decodeURIComponent(email[3]) + '”';
     } else if (e.metaKey) {
       if (e.altKey) {
         statusBar.innerText = 'Open “' + href + '” in a new window behind the current window';
