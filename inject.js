@@ -31,6 +31,16 @@ if (window.top === window) {
       statusBar.innerText = 'Send email to ' + email[1];
       if (email[3])
         statusBar.innerText += ' with subject “' + email[3] + '”';
+    } else if (e.metaKey) {
+      if (e.altKey) {
+        statusBar.innerText = 'Open “' + href + '” in a new window behind the current window';
+      } else {
+        statusBar.innerText = 'Open “' + href + '” in a new tab behind the current one';
+      }
+    } else if (e.altKey) {
+      statusBar.innerText = 'Download “' + href + '”';
+    } else if (e.ctrlKey) {
+      statusBar.innerText = 'Display a menu for “' + href + '”';
     } else {
       statusBar.innerText = 'Go to “' + href + '”';
     }
