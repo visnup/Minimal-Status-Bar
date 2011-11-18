@@ -7,7 +7,7 @@ div#com-fortnight-status-bar {
   color: #333;
   text-shadow: 0 1px 0 #d0d0d0;
   padding: 0.125em 8px 0.25em !important;
-  font: 8pt Lucida Grande;
+  font: 8pt Lucida Grande !important;
   border: solid 1px #6a6a6a;
   border-left: none;
   border-top-right-radius: 3px;
