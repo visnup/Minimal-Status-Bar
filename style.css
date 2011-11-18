@@ -8,8 +8,8 @@ div#com-fortnight-status-bar {
   text-shadow: 0 1px 0 #d0d0d0;
   padding: 0.125em 8px 0.25em !important;
   font: 8pt Lucida Grande !important;
-  border: solid 1px #6a6a6a;
-  border-left: none;
+  border: solid 1px #6a6a6a !important;
+  border-left: none !important;
   border-top-right-radius: 3px;
   overflow: hidden;
   white-space: nowrap;
