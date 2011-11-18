@@ -1,5 +1,6 @@
 div#com-fortnight-status-bar {
   position: fixed;
+  left: 0;
   bottom: -1px;
   z-index: 1000;
   background: -webkit-linear-gradient(top, #fff 0px, #b0b0b0 1px, #a7a7a7);
