@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="text/javascript">
+      safari.application.addEventListener('message', function handleMessage(e) {
+        switch (e.name) {
+          case 'hover':
+            var s = getStatus(e.message);
+            e.target.page.dispatchMessage('displayStatus', s);
+
+            // TODO debounce?
+            lengthenURL(e.message.href, function(result) {
+              var url = result['long-url'];
+              if (url) e.target.page.dispatchMessage('displayStatus', s + ' > ' +  url);
+            });
+        }
+      }, false);
+
+      function getStatus(options) {
+        var href = options.href
+          , email = href.match(/^mailto:([^?]+)(\?subject=([^&]+))?/i);
+
+        if (email) {
+          return 'Send email to ' + email[1] + (email[3] ? ' with subject “' + decodeURIComponent(email[3]) + '”' : '');
+        } else if (options.metaKey) {
+          if (options.altKey) {
+            return 'Open “' + href + '” in a new window behind the current window';
+          } else {
+            return 'Open “' + href + '” in a new tab behind the current one';
+          }
+        } else if (options.altKey) {
+          return 'Download “' + href + '”';
+        } else if (options.ctrlKey) {
+          return 'Display a menu for “' + href + '”';
+        } else if (options.target) {
+          return 'Open “' + href + '” in a new tab';
+        } else {
+          return 'Go to “' + href + '”';
+        }
+      }
+
+      var shortURL;
+      getJSON('http://api.longurl.org/v2/services?format=json', function(r) {
+        shortURL = new RegExp('://(' + Object.keys(r).join('|') + ')', 'i');
+      });
+      function isShortURL(url) {
+        return shortURL && url.match(shortURL);
+      }
+
+      function lengthenURL(url, callback) {
+        if (isShortURL(url))
+          getJSON('http://api.longurl.org/v2/expand?format=json&url=' + encodeURIComponent(url), callback);
+      }
+
+      function getJSON(url, callback) {
+        var xhr = new XMLHttpRequest
+        xhr.open('GET', url);
+        xhr.onreadystatechange = function(e) {
+          if (xhr.readyState === 4 && xhr.status === 200)
+            callback(JSON.parse(xhr.responseText));
+        };
+        xhr.send();
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
