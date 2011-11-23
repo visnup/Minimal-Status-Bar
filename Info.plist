@@ -7,7 +7,7 @@
 	<key>Builder Version</key>
 	<string>7534.51.22</string>
 	<key>CFBundleDisplayName</key>
-	<string>Status Bar</string>
+	<string>Minimal Status Bar</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.fortnightlabs.statusbar</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -35,6 +35,8 @@
 			<string>style.css</string>
 		</array>
 	</dict>
+	<key>Description</key>
+	<string>A status bar that gets out of your way</string>
 	<key>ExtensionInfoDictionaryVersion</key>
 	<string>1.0</string>
 	<key>Permissions</key>
