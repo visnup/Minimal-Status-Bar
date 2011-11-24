@@ -8,7 +8,7 @@ File a [bug or feature request][1] and I'll try to get to it.
 
 ## Screenshot
 
-![screenshot](http://f.cl.ly/items/2D09102s191F0A1U1z2H/status%20bar.png)
+![screenshot](http://f.cl.ly/items/0J2y0o2l2F3X2E1H3E3G/status%20bar.png)
 
 ## Philosophy
 
