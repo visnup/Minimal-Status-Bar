@@ -49,5 +49,7 @@
 			<string>All</string>
 		</dict>
 	</dict>
+	<key>Update Manifest URL</key>
+	<string>https://raw.github.com/visnup/Minimal-Status-Bar/master/Updates.plist</string>
 </dict>
 </plist>
