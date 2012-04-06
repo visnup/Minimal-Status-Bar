@@ -1,5 +1,5 @@
 div#com-fortnight-status-bar {
-  position: fixed;
+  position: fixed !important;
   left: 0;
   bottom: -1px;
   z-index: 2147483647 !important;
@@ -7,6 +7,7 @@ div#com-fortnight-status-bar {
   background: -webkit-linear-gradient(top, #fff 0px, #b0b0b0 1px, #a7a7a7) !important;
   color: #333 !important;
   text-shadow: 0 1px 0 #d0d0d0 !important;
+  margin: 0 !important;
   padding: 0.125em 8px 0.25em !important;
   font: 8pt Lucida Grande !important;
   border: solid 1px #6a6a6a !important;

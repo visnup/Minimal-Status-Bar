@@ -16,7 +16,8 @@ File a [bug or feature request][1] and I'll try to get to it.
 
    People use Safari because they like how it works and looks. Keep to the same
    promises. This means no themes, no customization other than what you
-   very likely already want. If you want that, try [Ultimate Status Bar][2].
+   very likely already want. If you want customization, try [Ultimate Status
+   Bar][2].
 
 [1]: https://github.com/visnup/Minimal-Status-Bar/issues
 [2]: http://ultimatestatusbar.com/
