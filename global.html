@@ -17,7 +17,7 @@
       }, false);
 
       function getStatus(options) {
-        var href = options.href
+        var href = options.href.trim()
           , email = href.match(/^mailto:([^?]+)(\?subject=([^&]+))?/i);
 
         if (email) {
