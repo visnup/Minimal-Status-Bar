@@ -7,6 +7,7 @@ http.createServer (req, res) ->
     <ul>
       <li><a href="/relative">a relative link</a></li>
       <li><a href="http://google.com">google.com</a></li>
+      <li><a href="http://is.gd/w">shortened link</a></li>
       <li><a href="mailto:visnupx@gmail.com">mailto link</a></li>
       <li><a href="mailto:visnupx@gmail.com?subject=feedback">mailto link + subject</a></li>
       <li><a href="mailto:visnupx@gmail.com?subject=feedback&body=yo">mailto link + subject + body</a></li>
