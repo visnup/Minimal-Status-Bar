@@ -39,6 +39,14 @@ Philosophy
    look and feel, this will match only the latest. You might try older versions
    if you're trying to match older Safari versions.
 
+Contributors
+------------
+
+ - Visnu Pitiyanuvath ([visnup])
+ - Zak Johnson ([zakj])
+
 [1]: https://github.com/visnup/Minimal-Status-Bar/issues
 [2]: https://github.com/visnup/Minimal-Status-Bar/downloads
 [3]: http://ultimatestatusbar.com/
+[visnup]: https://github.com/visnup
+[zakj]: https://github.com/zakj
