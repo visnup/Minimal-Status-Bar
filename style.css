@@ -11,11 +11,12 @@ div#com-fortnight-status-bar {
   padding: 0.125em 8px 0.25em !important;
   font: 8pt Lucida Grande !important;
   border: solid 1px #707070 !important;
-  border-left: none !important;
+  border-left-width: 0 !important;
   border-top-right-radius: 3px !important;
   text-rendering: optimizeLegibility;
   overflow: hidden;
   white-space: nowrap;
+  pointer-events: none;
   opacity: 0;
   -webkit-transition: opacity 100ms ease-out;
 }
@@ -36,7 +37,9 @@ div#com-fortnight-status-bar.active {
   -webkit-transition: opacity 100ms ease-in;
 }
 
-div#com-fortnight-status-bar:hover {
-  margin-bottom: 1.5em;
-  border-bottom-right-radius: 3px;
+div#com-fortnight-status-bar.right-side {
+  left: auto;
+  right: 0;
+  border-radius: 3px 0 0 0 !important;
+  border-width: 1px 0 1px 1px !important;
 }
