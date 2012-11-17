@@ -9,11 +9,11 @@
             var s = getStatus(e.message);
             e.target.page.dispatchMessage('displayStatus', s);
 
-            if (!safari.application.privateBrowsing.enabled) {
+            if (safari.extension.settings.longURL && !safari.application.privateBrowsing.enabled) {
               // TODO debounce?
               lengthenURL(e.message.href, function(result) {
                 var url = result['long-url'];
-                if (url) e.target.page.dispatchMessage('displayStatus', s + ' > ' +  url);
+                if (url) e.target.page.dispatchMessage('displayStatus', s + ' → ' +  url);
               });
             }
         }
