@@ -1,4 +1,4 @@
-var statusBar;
+var statusBar, el;
 
 if (window.top === window) {
   if (document.readyState === 'complete')
@@ -16,7 +16,7 @@ if (window.top === window) {
   function ready() { document.body.addEventListener('mouseover', hover); }
 
   function hover(e) {
-    var el = e.target;
+    el = e.target;
     while (el && el.nodeName !== 'A')
       el = el.parentNode;
 
@@ -32,6 +32,16 @@ if (window.top === window) {
       hideStatus();
   }
 
+  function elementsIntersect(a, b) {
+    a = a.getBoundingClientRect();
+    b = b.getBoundingClientRect();
+    var xIntersect = (a.left <= b.left && b.left <= a.right) ||
+      (b.left <= a.left && a.left <= b.right);
+    var yIntersect = (a.top <= b.top && b.top <= a.bottom) ||
+      (b.top <= a.top && a.top <= b.bottom);
+    return xIntersect && yIntersect;
+  }
+
   function displayStatus(text) {
     if (!statusBar) {
       statusBar = document.createElement('div');
@@ -40,11 +50,21 @@ if (window.top === window) {
     }
 
     statusBar.innerText = text;
-    setTimeout(function() { statusBar.className = 'active'; }, 1);
+    setTimeout(function() { statusBar.classList.add('active'); }, 1);
+
+    // If the statusbar overlaps the hovered element, try moving it to the
+    // right side of the viewport. If it still overlaps, give up and put it
+    // back.
+    statusBar.classList.remove('right-side');
+    if (elementsIntersect(statusBar, el)) {
+      statusBar.classList.add('right-side');
+      if (elementsIntersect(statusBar, el))
+        statusBar.classList.remove('right-side');
+    }
   }
 
   function hideStatus() {
     if (statusBar)
-      statusBar.className = '';
+      statusBar.classList.remove('active');
   }
 }
