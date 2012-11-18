@@ -7,12 +7,11 @@ http.createServer (req, res) ->
     <style>
       .bottom a {
         position: absolute;
-        bottom: 10px;
-        width: 100px;
-        outline: 1px dashed;
+        bottom: 5px;
+        outline: 1px dotted;
       }
       [href=left] { left: 10px; }
-      [href=center] { left: 50%; text-align: center; margin-left: -50px; }
+      [href^=center] { left: 50%; text-align: center; margin-left: -64px; }
       [href=right] { right: 10px; text-align: right; }
     </style>
     <ul>
@@ -34,7 +33,7 @@ http.createServer (req, res) ->
 
     <p class="bottom">
       <a href="left">bottom left</a>
-      <a href="center">bottom center</a>
+      <a href="center?something+very+long+that+just+will+not+work+with+anything+really">bottom center (long)</a>
       <a href="right">bottom right</a>
     </p>
   '''
