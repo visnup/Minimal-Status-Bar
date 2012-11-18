@@ -13,7 +13,7 @@
               // TODO debounce?
               lengthenURL(e.message.href, function(result) {
                 var url = result['long-url'];
-                if (url) e.target.page.dispatchMessage('displayStatus', s + ' → ' +  url);
+                if (url) e.target.page.dispatchMessage('displayStatus', s + ' (' +  url + ')');
               });
             }
         }
