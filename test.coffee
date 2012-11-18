@@ -4,6 +4,17 @@ http = require 'http'
 http.createServer (req, res) ->
   res.writeHead 200, 'Content-Type': 'text/html'
   res.end '''
+    <style>
+      .bottom a {
+        position: absolute;
+        bottom: 10px;
+        width: 100px;
+        outline: 1px dashed;
+      }
+      [href=left] { left: 10px; }
+      [href=center] { left: 50%; text-align: center; margin-left: -50px; }
+      [href=right] { right: 10px; text-align: right; }
+    </style>
     <ul>
       <li><a href="/relative">a relative link</a></li>
       <li><a href="http://google.com">google.com</a></li>
@@ -20,6 +31,12 @@ http.createServer (req, res) ->
       <li><a href="/relative">hold down alt</a></li>
       <li><a href="/relative">hold down control</a></li>
     </ul>
+
+    <p class="bottom">
+      <a href="left">bottom left</a>
+      <a href="center">bottom center</a>
+      <a href="right">bottom right</a>
+    </p>
   '''
 .listen 8001, '127.0.0.1'
 spawn 'open', ['http://127.0.0.1:8001']
