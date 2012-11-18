@@ -8,7 +8,7 @@
 		<key>Key</key>
 		<string>longURL</string>
 		<key>Title</key>
-		<string>Expand shortened URLs using LongURL.org</string>
+    <string>Expand shortened URLs (disabled in Private Browsing Mode)</string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
