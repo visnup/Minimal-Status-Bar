@@ -10,7 +10,7 @@ File a [bug or feature request][1] and I'll try to get to it.
 Screenshot
 ----------
 
-![screenshot](http://f.cl.ly/items/0J2y0o2l2F3X2E1H3E3G/status%20bar.png)
+![screenshot](https://cldup.com/_KsO06MxZt.png)
 
 Installation
 ------------
