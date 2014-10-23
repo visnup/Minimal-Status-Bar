@@ -5,7 +5,7 @@
 	<key>Author</key>
 	<string>Visnu Pitiyanuvath</string>
 	<key>Builder Version</key>
-	<string>8536.26.17</string>
+	<string>10600.1.25</string>
 	<key>CFBundleDisplayName</key>
 	<string>Minimal Status Bar</string>
 	<key>CFBundleIdentifier</key>
@@ -37,6 +37,8 @@
 	</dict>
 	<key>Description</key>
 	<string>A status bar that gets out of your way</string>
+	<key>DeveloperIdentifier</key>
+	<string>2GR4447TCG</string>
 	<key>ExtensionInfoDictionaryVersion</key>
 	<string>1.0</string>
 	<key>Permissions</key>
