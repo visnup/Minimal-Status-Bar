@@ -11,11 +11,11 @@
        <key>Developer Identifier</key>
        <string>8KVQXPA755</string>
        <key>CFBundleVersion</key>
-       <string>1.8</string>
+       <string>1.9</string>
        <key>CFBundleShortVersionString</key>
-       <string>1.8</string>
+       <string>1.9</string>
        <key>URL</key>
-       <string>https://github.com/downloads/visnup/Minimal-Status-Bar/Minimal%20Status%20Bar%201.8.safariextz</string>
+       <string>https://github.com/visnup/Minimal-Status-Bar/releases/download/v1.9/Minimal.Status.Bar.1.9.safariextz</string>
      </dict>
    </array>
 </dict>
