@@ -46,7 +46,7 @@ Contributors
  - Zak Johnson ([zakj])
 
 [1]: https://github.com/visnup/Minimal-Status-Bar/issues
-[2]: https://github.com/visnup/Minimal-Status-Bar/releases/download/v1.9/Minimal.Status.Bar.1.9.safariextz
+[2]: https://github.com/visnup/Minimal-Status-Bar/releases/download/v1.10/Minimal.Status.Bar.1.10.safariextz
 [3]: http://ultimatestatusbar.com/
 [visnup]: https://github.com/visnup
 [zakj]: https://github.com/zakj
