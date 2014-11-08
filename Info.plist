@@ -52,7 +52,7 @@
 		</dict>
 	</dict>
 	<key>Update Manifest URL</key>
-	<string>https://raw.github.com/visnup/Minimal-Status-Bar/master/Updates.plist</string>
+	<string>https://raw.githubusercontent.com/visnup/Minimal-Status-Bar/master/Updates.plist</string>
 	<key>Website</key>
 	<string>http://visnup.github.com/Minimal-Status-Bar/</string>
 </dict>
