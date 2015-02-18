@@ -14,6 +14,7 @@ div#com-fortnight-status-bar {
   border: solid 1px hsl(0, 0%, 52%) !important;
   border-left-width: 0 !important;
   border-top-right-radius: 3px !important;
+  letter-spacing: normal !important;
   text-rendering: optimizeLegibility;
   overflow: hidden;
   white-space: nowrap;
