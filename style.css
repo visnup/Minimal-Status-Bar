@@ -4,6 +4,7 @@ div#com-fortnight-status-bar {
   bottom: -1px;
   z-index: 2147483647 !important;
   width: auto !important;
+  height: auto !important;
   background: linear-gradient(180deg, hsl(0, 0%, 92%) 0, hsl(0, 0%, 86%) 1px, hsl(0, 0%, 85%)) !important;
   color: hsl(0, 0%, 0%) !important;
   text-shadow: 0 1px 0 hsl(0, 0%, 92%) !important;
