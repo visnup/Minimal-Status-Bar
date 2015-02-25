@@ -15,7 +15,7 @@ Screenshot
 Installation
 ------------
 
-[Download the extension][2] and open it with Safari.
+[Download the extension][2] and open it with Safari. Also, you'll probably want to hide the real status bar via View > Hide Status Bar (⌘/).
 
 Philosophy
 ----------
