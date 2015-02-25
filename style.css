@@ -7,7 +7,6 @@ div#com-fortnight-status-bar {
   height: auto !important;
   background: linear-gradient(180deg, hsl(0, 0%, 92%) 0, hsl(0, 0%, 86%) 1px, hsl(0, 0%, 85%)) !important;
   color: hsl(0, 0%, 0%) !important;
-  text-shadow: 0 1px 0 hsl(0, 0%, 92%) !important;
   margin: 0 !important;
   padding: 0.20em 12px 0.25em !important;
   font: 8pt Helvetica Neue !important;
