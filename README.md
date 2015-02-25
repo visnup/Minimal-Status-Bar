@@ -15,7 +15,7 @@ Screenshot
 Installation
 ------------
 
-[Download the extension][2] and open it with Safari. Also, you'll probably want to hide the real status bar via View > Hide Status Bar (⌘/).
+**[Download the extension][2]** and open it with Safari. Also, you'll probably want to hide the real status bar via View > Hide Status Bar (⌘/).
 
 Philosophy
 ----------
@@ -36,7 +36,7 @@ Philosophy
  - Latest
 
    This will follow the latest versions of Safari, meaning if Safari changes
-   look and feel, this will match only the latest. You might try older versions
+   look and feel, this will match only the latest. You might try [previous revisions][4]
    if you're trying to match older Safari versions.
 
 Contributors
@@ -51,6 +51,7 @@ Contributors
 [1]: https://github.com/visnup/Minimal-Status-Bar/issues
 [2]: https://github.com/visnup/Minimal-Status-Bar/releases/download/v1.12/Minimal-Status-Bar-1.12.safariextz
 [3]: http://ultimatestatusbar.com/
+[4]: https://github.com/visnup/Minimal-Status-Bar/releases
 [visnup]: https://github.com/visnup
 [zakj]: https://github.com/zakj
 [mb3]: https://github.com/mb3
