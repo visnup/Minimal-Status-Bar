@@ -45,6 +45,8 @@ Contributors
  - Visnu Pitiyanuvath ([visnup])
  - Zak Johnson ([zakj])
  - Michael Bailey ([mb3])
+ - Bjørn Rostad ([bearroast])
+ - Mike Fitzgerald ([fitzymj])
 
 [1]: https://github.com/visnup/Minimal-Status-Bar/issues
 [2]: https://github.com/visnup/Minimal-Status-Bar/releases/download/v1.10/Minimal.Status.Bar.1.10.safariextz
@@ -52,3 +54,5 @@ Contributors
 [visnup]: https://github.com/visnup
 [zakj]: https://github.com/zakj
 [mb3]: https://github.com/mb3
+[bearroast]: https://github.com/bearroast
+[fitzymj]: https://github.com/fitzymj
