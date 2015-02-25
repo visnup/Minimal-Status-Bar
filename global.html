@@ -35,7 +35,7 @@
           return 'Download “' + href + '”';
         } else if (options.ctrlKey) {
           return 'Display a menu for “' + href + '”';
-        } else if (options.target) {
+        } else if (options.target && options.target !== '_self') {
           return 'Open “' + href + '” in a new tab';
         } else {
           return 'Go to “' + href + '”';
