@@ -49,7 +49,7 @@ Contributors
  - Mike Fitzgerald ([fitzymj])
 
 [1]: https://github.com/visnup/Minimal-Status-Bar/issues
-[2]: https://github.com/visnup/Minimal-Status-Bar/releases/download/v1.10/Minimal.Status.Bar.1.10.safariextz
+[2]: https://github.com/visnup/Minimal-Status-Bar/releases/download/v1.12/Minimal-Status-Bar-1.12.safariextz
 [3]: http://ultimatestatusbar.com/
 [visnup]: https://github.com/visnup
 [zakj]: https://github.com/zakj
