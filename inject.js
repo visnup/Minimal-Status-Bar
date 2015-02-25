@@ -1,4 +1,4 @@
-var statusBar, el;
+var statusBar, el, isMetaKeyDown, isCtrlKeyDown, isAltKeyDown;
 
 if (window.top === window) {
   if (document.readyState === 'complete')
@@ -20,16 +20,41 @@ if (window.top === window) {
     while (el && el.nodeName !== 'A')
       el = el.parentNode;
 
-    if (el && el.attributes.href)
-      safari.self.tab.dispatchMessage('hover', {
-        href: el.attributes.href.value,
-        target: el.target,
-        metaKey: e.metaKey,
-        ctrlKey: e.ctrlKey,
-        altKey: e.altKey
-      });
-    else
+    if (el && el.attributes.href) {
+      isMetaKeyDown = e.metaKey;
+      isCtrlKeyDown = e.ctrlKey;
+      isAltKeyDown = e.altKey;
+      dispatch();
+    } else {
       hideStatus();
+    }
+  }
+
+  function keyChanged(e) {
+    switch (e.keyCode) {
+      case 17:
+        isCtrlKeyDown = !isCtrlKeyDown;
+        dispatch();
+        break;
+      case 18:
+        isAltKeyDown = !isAltKeyDown;
+        dispatch();
+        break;
+      case 91:
+        isMetaKeyDown = !isMetaKeyDown;
+        dispatch();
+        break;
+    }
+  }
+
+  function dispatch() {
+    safari.self.tab.dispatchMessage('hover', {
+      href: el.attributes.href.value,
+      target: el.target,
+      metaKey: isMetaKeyDown,
+      ctrlKey: isCtrlKeyDown,
+      altKey: isAltKeyDown
+    });
   }
 
   function elementsIntersect(a, b) {
@@ -51,6 +76,8 @@ if (window.top === window) {
 
     statusBar.innerText = text;
     setTimeout(function() { statusBar.classList.add('active'); }, 1);
+    document.body.addEventListener('keydown', keyChanged);
+    document.body.addEventListener('keyup', keyChanged);
 
     // If the statusbar overlaps the hovered element, try moving it to the
     // right side of the viewport. If it still overlaps, give up and put it
@@ -64,7 +91,10 @@ if (window.top === window) {
   }
 
   function hideStatus() {
-    if (statusBar)
+    if (statusBar) {
+      document.body.removeEventListener('keydown', keyChanged);
+      document.body.removeEventListener('keyup', keyChanged)
       statusBar.classList.remove('active');
+    }
   }
 }
