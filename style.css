@@ -6,14 +6,14 @@ div#com-fortnight-status-bar {
   width: auto !important;
   height: auto !important;
   background: linear-gradient(180deg, hsl(0, 0%, 92%) 0, hsl(0, 0%, 86%) 1px, hsl(0, 0%, 85%)) !important;
-  color: hsl(0, 0%, 0%) !important;
+  color: hsl(300, 2%, 10%) !important;
   margin: 0 !important;
   padding: 0.20em 12px 0.25em !important;
   font: 8pt Helvetica Neue !important;
   border: solid 1px hsl(0, 0%, 52%) !important;
   border-left-width: 0 !important;
   border-top-right-radius: 3px !important;
-  letter-spacing: normal !important;
+  letter-spacing: 0.36px !important;
   text-rendering: optimizeLegibility;
   overflow: hidden;
   white-space: nowrap;
