@@ -1,4 +1,4 @@
-var statusBar, el, isMetaKeyDown, isCtrlKeyDown, isAltKeyDown;
+var statusBar, el, isMetaKeyDown, isCtrlKeyDown, isAltKeyDown, absoluteURL;
 
 if (window.top === window) {
   if (document.readyState === 'complete')
@@ -10,10 +10,16 @@ if (window.top === window) {
     switch (e.name) {
       case 'displayStatus':
         displayStatus(e.message);
+        break;
+      case 'setSettings':
+        absoluteURL = e.message.absoluteURL;
     }
   }, false);
 
-  function ready() { document.body.addEventListener('mouseover', hover); }
+  function ready() {
+    document.body.addEventListener('mouseover', hover);
+    safari.self.tab.dispatchMessage('getSettings');
+  }
 
   function hover(e) {
     el = e.target;
@@ -58,6 +64,10 @@ if (window.top === window) {
   }
 
   function formatUrl(url) {
+    if (!absoluteURL) {
+      return url;
+    }
+
     var a = document.createElement('a');
     a.href = url;
     return a && a.href || url;
