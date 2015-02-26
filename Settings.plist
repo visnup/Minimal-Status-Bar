@@ -8,9 +8,19 @@
 		<key>Key</key>
 		<string>longURL</string>
 		<key>Title</key>
-    <string>Expand shortened URLs (disabled in Private Browsing Mode)</string>
+    	<string>Expand shortened URLs (disabled in Private Browsing Mode)</string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<false/>
+		<key>Key</key>
+		<string>absoluteURL</string>
+		<key>Title</key>
+		<string>Explicitly format URLs as absolute</string>
+		<key>Type</key>
+		<string>CheckBox</string>
+    	</dict>
 </array>
 </plist>
