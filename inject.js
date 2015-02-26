@@ -49,12 +49,18 @@ if (window.top === window) {
 
   function dispatch() {
     safari.self.tab.dispatchMessage('hover', {
-      href: el.attributes.href.value,
+      href: formatUrl(el.attributes.href.value),
       target: el.target,
       metaKey: isMetaKeyDown,
       ctrlKey: isCtrlKeyDown,
       altKey: isAltKeyDown
     });
+  }
+
+  function formatUrl(url) {
+    var a = document.createElement('a');
+    a.href = url;
+    return a && a.href || url;
   }
 
   function elementsIntersect(a, b) {
