@@ -22,6 +22,14 @@ div#com-fortnight-status-bar {
   transition: opacity 100ms ease-out;
 }
 
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  div#com-fortnight-status-bar {
+    background: linear-gradient(180deg, hsla(0, 0%, 92%, .5) 0, hsla(0, 0%, 86%, .5) 1px, hsla(0, 0%, 85%, .5)) !important;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+}
+
 div#com-fortnight-status-bar.active {
   opacity: 1;
   transition: opacity 100ms ease-in;
