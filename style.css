@@ -12,7 +12,7 @@ div#com-fortnight-status-bar {
   font: 8pt Helvetica Neue !important;
   border: solid 1px hsl(0, 0%, 52%) !important;
   border-left-width: 0 !important;
-  border-top-right-radius: 3px !important;
+  border-radius: 0 3px 0 0 !important;
   letter-spacing: 0.36px !important;
   text-rendering: optimizeLegibility;
   overflow: hidden;
