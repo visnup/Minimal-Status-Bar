@@ -20,7 +20,8 @@
       }, false);
 
       function getStatus(options) {
-        var href = decodeURIComponent(options.href.trim())
+        var absoluteURL = safari.extension.settings.absoluteURL
+          , href = decodeURIComponent((absoluteURL ? options.href : options.hrefRelative).trim())
           , email = href.match(/^mailto:([^?]+)(\?subject=([^&]+))?/i);
 
         if (email) {

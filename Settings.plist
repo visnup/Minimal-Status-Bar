@@ -3,12 +3,22 @@
 <plist version="1.0">
 <array>
 	<dict>
-		<key>DefaultValue</key>
-		<true/>
 		<key>Key</key>
 		<string>longURL</string>
+		<key>DefaultValue</key>
+		<true/>
 		<key>Title</key>
-    <string>Expand shortened URLs (disabled in Private Browsing Mode)</string>
+		<string>Expand shortened URLs (disabled in Private Browsing Mode)</string>
+		<key>Type</key>
+		<string>CheckBox</string>
+  </dict>
+	<dict>
+		<key>Key</key>
+		<string>absoluteURL</string>
+		<key>DefaultValue</key>
+		<true/>
+		<key>Title</key>
+		<string>Always show absolute URLs</string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>

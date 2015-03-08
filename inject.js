@@ -49,7 +49,8 @@ if (window.top === window) {
 
   function dispatch() {
     safari.self.tab.dispatchMessage('hover', {
-      href: el.attributes.href.value,
+      href: el.href,
+      hrefRelative: el.attributes.href.value,
       target: el.target,
       metaKey: isMetaKeyDown,
       ctrlKey: isCtrlKeyDown,
