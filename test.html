@@ -1,9 +1,5 @@
-spawn = require('child_process').spawn
-http = require 'http'
-
-http.createServer (req, res) ->
-  res.writeHead 200, 'Content-Type': 'text/html'
-  res.end '''
+<html>
+  <head>
     <style>
       .bottom a {
         position: absolute;
@@ -14,6 +10,12 @@ http.createServer (req, res) ->
       [href^=center] { left: 50%; text-align: center; margin-left: -64px; }
       [href=right] { right: 10px; text-align: right; }
     </style>
+  </head>
+  <body>
+    <p>
+      Run <code>python -m SimpleHTTPServer</code> and navigate to
+      http://localhost:8000/test.html to view this page.
+    </p>
     <ul>
       <li><a href="/relative">a relative link</a></li>
       <li><a href="http://google.com">google.com</a></li>
@@ -36,6 +38,5 @@ http.createServer (req, res) ->
       <a href="center?something+very+long+that+just+will+not+work+with+anything+really">bottom center (long)</a>
       <a href="right">bottom right</a>
     </p>
-  '''
-.listen 8001, '127.0.0.1'
-spawn 'open', ['http://127.0.0.1:8001']
+  </body>
+</html>
