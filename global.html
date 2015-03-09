@@ -6,7 +6,8 @@
       var message = {};
       safari.application.addEventListener('message', function handleMessage(e) {
         switch (e.name) {
-          case 'hover':
+          case 'mouseover':
+            // copy any new state into our state
             for (var key in e.message)
               if (e.message.hasOwnProperty(key))
                 message[key] = e.message[key];
@@ -21,6 +22,11 @@
                 if (url) e.target.page.dispatchMessage('displayStatus', s + ' (' +  url + ')');
               });
             }
+            break;
+
+          case 'mouseout':
+            e.target.page.dispatchMessage('hideStatus');
+            break;
         }
       }, false);
 
