@@ -47,6 +47,8 @@ Contributors
  - Michael Bailey ([mb3])
  - Bjørn Rostad ([bearroast])
  - Mike Fitzgerald ([fitzymj])
+ - Vladimir Kucherenko ([VFK])
+ - David Gouch ([gouch])
 
 [1]: https://github.com/visnup/Minimal-Status-Bar/issues
 [2]: https://github.com/visnup/Minimal-Status-Bar/releases/download/v1.12/Minimal-Status-Bar-1.12.safariextz
@@ -57,3 +59,5 @@ Contributors
 [mb3]: https://github.com/mb3
 [bearroast]: https://github.com/bearroast
 [fitzymj]: https://github.com/fitzymj
+[VKF]: https://github.com/VFK
+[gouch]: https://github.com/gouch
