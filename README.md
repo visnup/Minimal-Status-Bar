@@ -59,5 +59,5 @@ Contributors
 [mb3]: https://github.com/mb3
 [bearroast]: https://github.com/bearroast
 [fitzymj]: https://github.com/fitzymj
-[VKF]: https://github.com/VFK
+[VFK]: https://github.com/VFK
 [gouch]: https://github.com/gouch
