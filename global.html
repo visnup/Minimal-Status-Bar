@@ -3,10 +3,15 @@
   <head>
     <meta charset="utf-8">
     <script type="text/javascript">
+      var message = {};
       safari.application.addEventListener('message', function handleMessage(e) {
         switch (e.name) {
           case 'hover':
-            var s = getStatus(e.message);
+            for (var key in e.message)
+              if (e.message.hasOwnProperty(key))
+                message[key] = e.message[key];
+
+            var s = getStatus(message);
             e.target.page.dispatchMessage('displayStatus', s);
 
             if (safari.extension.settings.longURL && !safari.application.privateBrowsing.enabled) {

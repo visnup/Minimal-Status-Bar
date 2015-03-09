@@ -1,4 +1,4 @@
-var statusBar, el, isMetaKeyDown, isCtrlKeyDown, isAltKeyDown;
+var statusBar, el;
 
 if (window.top === window) {
   if (document.readyState === 'complete')
@@ -21,10 +21,14 @@ if (window.top === window) {
       el = el.parentNode;
 
     if (el && el.attributes.href) {
-      isMetaKeyDown = e.metaKey;
-      isCtrlKeyDown = e.ctrlKey;
-      isAltKeyDown = e.altKey;
-      dispatch();
+      safari.self.tab.dispatchMessage('hover', {
+        href: el.href,
+        hrefRelative: el.attributes.href.value,
+        target: el.target,
+        metaKey: e.metaKey,
+        ctrlKey: e.ctrlKey,
+        altKey: e.altKey
+      });
     } else {
       hideStatus();
     }
@@ -33,29 +37,15 @@ if (window.top === window) {
   function keyChanged(e) {
     switch (e.keyCode) {
       case 17:
-        isCtrlKeyDown = !isCtrlKeyDown;
-        dispatch();
+        safari.self.tab.dispatchMessage('hover', { ctrlKey: e.ctrlKey });
         break;
       case 18:
-        isAltKeyDown = !isAltKeyDown;
-        dispatch();
+        safari.self.tab.dispatchMessage('hover', { altKey: e.altKey });
         break;
       case 91:
-        isMetaKeyDown = !isMetaKeyDown;
-        dispatch();
+        safari.self.tab.dispatchMessage('hover', { metaKey: e.metaKey });
         break;
     }
-  }
-
-  function dispatch() {
-    safari.self.tab.dispatchMessage('hover', {
-      href: el.href,
-      hrefRelative: el.attributes.href.value,
-      target: el.target,
-      metaKey: isMetaKeyDown,
-      ctrlKey: isCtrlKeyDown,
-      altKey: isAltKeyDown
-    });
   }
 
   function elementsIntersect(a, b) {
