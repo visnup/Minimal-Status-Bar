@@ -20,6 +20,7 @@ div#com-fortnight-status-bar {
   pointer-events: none;
   opacity: 0;
   transition: opacity 100ms ease-out;
+  transition-delay: 50ms;
 }
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
