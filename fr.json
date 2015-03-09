@@ -1,0 +1,12 @@
+{
+  "email": {
+    "to": "Adresser un e-mail à {to}",
+    "subject": "Envoyer à {to} un e-mail dont l’objet est « {subject} »"
+  },
+  "newWindowBehind": "Ouvrir « {href} » dans une nouvelle fenêtre en arrière-plan",
+  "newTabBehind": "Ouvrir « {href} » dans un nouvel onglet en arrière-plan",
+  "download": "Télécharger « {href} »",
+  "menu": "Afficher un menu pour « {href} »",
+  "newTab": "Ouvrir « {href} » dans un nouvel onglet",
+  "go": "Ouvrir « {href} »"
+}

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <script type="text/javascript">
+    <script>
       var message = {};
       safari.application.addEventListener('message', function handleMessage(e) {
         switch (e.name) {
@@ -36,23 +36,37 @@
           , email = href.match(/^mailto:([^?]+)(\?subject=([^&]+))?/i);
 
         if (email) {
-          return 'Send email to ' + email[1] + (email[3] ? ' with subject “' + decodeURIComponent(email[3]) + '”' : '');
+          if (email[3]) {
+            return strings.email.subject.replace(/{to}/g, email[1])
+                                        .replace(/{subject}/g, decodeURIComponent(email[3]));
+          } else {
+            return strings.email.to.replace(/{to}/g, email[1]);
+          }
         } else if (options.metaKey) {
           if (options.altKey) {
-            return 'Open “' + href + '” in a new window behind the current window';
+            return strings.newWindowBehind.replace(/{href}/g, href);
           } else {
-            return 'Open “' + href + '” in a new tab behind the current one';
+            return strings.newTabBehind.replace(/{href}/g, href);
           }
         } else if (options.altKey) {
-          return 'Download “' + href + '”';
+          return strings.download.replace(/{href}/g, href);
         } else if (options.ctrlKey) {
-          return 'Display a menu for “' + href + '”';
+          return strings.menu.replace(/{href}/g, href);
         } else if (options.target && options.target !== '_self') {
-          return 'Open “' + href + '” in a new tab';
+          return strings.newTab.replace(/{href}/g, href);
         } else {
-          return 'Go to “' + href + '”';
+          return strings.go.replace(/{href}/g, href);
         }
       }
+
+      var strings;
+      (function loadNextLocale(locales) {
+        if (!locales.length) return;
+        getJSON(locales.shift() + '.json', function(json) {
+          if (json) return strings = json;
+          loadNextLocale(locales);
+        });
+      })([ navigator.language, navigator.language.split('-')[0], 'en' ]);
 
       var shortURL;
       getJSON('http://api.longurl.org/v2/services?format=json', function(r) {
@@ -68,11 +82,11 @@
       }
 
       function getJSON(url, callback) {
-        var xhr = new XMLHttpRequest
+        var xhr = new XMLHttpRequest;
         xhr.open('GET', url);
         xhr.onreadystatechange = function(e) {
-          if (xhr.readyState === 4 && xhr.status === 200)
-            callback(JSON.parse(xhr.responseText));
+          if (xhr.readyState === 4 && (xhr.status === 200 || xhr.status === 0))
+            callback(xhr.responseText && JSON.parse(xhr.responseText));
         };
         xhr.send();
       }
