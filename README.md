@@ -42,22 +42,15 @@ Philosophy
 Contributors
 ------------
 
- - Visnu Pitiyanuvath ([visnup])
- - Zak Johnson ([zakj])
- - Michael Bailey ([mb3])
- - Bjørn Rostad ([bearroast])
- - Mike Fitzgerald ([fitzymj])
- - Vladimir Kucherenko ([VFK])
- - David Gouch ([gouch])
+ - Visnu Pitiyanuvath ([visnup](https://github.com/visnup))
+ - Zak Johnson ([zakj](https://github.com/zakj))
+ - Michael Bailey ([mb3](https://github.com/mb3))
+ - Bjørn Rostad ([bearroast](https://github.com/bearroast))
+ - Mike Fitzgerald ([fitzymj](https://github.com/fitzymj))
+ - Vladimir Kucherenko ([VFK](https://github.com/VFK))
+ - David Gouch ([gouch](https://github.com/gouch))
 
 [1]: https://github.com/visnup/Minimal-Status-Bar/issues
 [2]: https://github.com/visnup/Minimal-Status-Bar/releases/download/v1.12/Minimal-Status-Bar-1.12.safariextz
 [3]: http://ultimatestatusbar.com/
 [4]: https://github.com/visnup/Minimal-Status-Bar/releases
-[visnup]: https://github.com/visnup
-[zakj]: https://github.com/zakj
-[mb3]: https://github.com/mb3
-[bearroast]: https://github.com/bearroast
-[fitzymj]: https://github.com/fitzymj
-[VFK]: https://github.com/VFK
-[gouch]: https://github.com/gouch
