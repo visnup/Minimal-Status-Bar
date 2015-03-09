@@ -1,0 +1,12 @@
+{
+  "email": {
+    "to": "Lähetä sähköpostia osoitteeseen {to}",
+    "subject": "Lähetä sähköpostia henkilölle {to} aiheella ”{subject}”"
+  },
+  "newWindowBehind": "Avaa ”{href}” uudessa ikkunassa nykyisen takana",
+  "newTabBehind": "Avaa ”{href}” uudella välilehdellä nykyisen takana",
+  "download": "Lataa ”{href}”",
+  "menu": "Näytä valikko kohteelle ”{href}”",
+  "newTab": "Avaa ”{href}” uudella välilehdellä",
+  "go": "Siirry kohteeseen ”{href}”"
+}
