@@ -51,6 +51,6 @@ Contributors
  - David Gouch ([gouch](https://github.com/gouch))
 
 [1]: https://github.com/visnup/Minimal-Status-Bar/issues
-[2]: https://github.com/visnup/Minimal-Status-Bar/releases/download/v1.12/Minimal-Status-Bar-1.12.safariextz
+[2]: https://github.com/visnup/Minimal-Status-Bar/releases/download/v1.13/Minimal-Status-Bar-1.13.safariextz
 [3]: http://ultimatestatusbar.com/
 [4]: https://github.com/visnup/Minimal-Status-Bar/releases
