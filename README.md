@@ -49,6 +49,8 @@ Contributors
  - Mike Fitzgerald ([fitzymj](https://github.com/fitzymj))
  - Vladimir Kucherenko ([VFK](https://github.com/VFK))
  - David Gouch ([gouch](https://github.com/gouch))
+ - Kasper Hirvikoski ([kasper](https://github.com/kasper))
+ - Héctor López Carral ([Kyze](https://github.com/Kyze))
 
 [1]: https://github.com/visnup/Minimal-Status-Bar/issues
 [2]: https://github.com/visnup/Minimal-Status-Bar/releases/download/v1.13/Minimal-Status-Bar-1.13.safariextz
