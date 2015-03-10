@@ -9,6 +9,15 @@ if (window.top === window) {
         hideStatus();
     }
   }, false);
+
+  window.addEventListener('blur', function() {
+    if (statusBar)
+      statusBar.classList.add('blur');
+  });
+  window.addEventListener('focus', function() {
+    if (statusBar)
+      statusBar.classList.remove('blur');
+  });
 }
 
 if (document.readyState === 'complete')

@@ -36,6 +36,11 @@ div#com-fortnight-status-bar.active {
   transition: opacity 100ms ease-in;
 }
 
+div#com-fortnight-status-bar.blur {
+  background: linear-gradient(180deg, hsl(0, 0%, 98%) 0, hsl(0, 0%, 96%) 1px, hsl(0, 0%, 96%)) !important;
+  border-color: hsl(0, 0%, 72%) !important;
+}
+
 div#com-fortnight-status-bar.right-side {
   left: auto;
   right: 0;
