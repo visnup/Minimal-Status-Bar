@@ -53,6 +53,6 @@ Contributors
  - Héctor López Carral ([Kyze](https://github.com/Kyze))
 
 [1]: https://github.com/visnup/Minimal-Status-Bar/issues
-[2]: https://github.com/visnup/Minimal-Status-Bar/releases/download/v1.13/Minimal-Status-Bar-1.13.safariextz
+[2]: https://github.com/visnup/Minimal-Status-Bar/releases/download/v1.14/Minimal-Status-Bar-1.14.safariextz
 [3]: http://ultimatestatusbar.com/
 [4]: https://github.com/visnup/Minimal-Status-Bar/releases
