@@ -62,7 +62,7 @@
       var strings;
       (function loadNextLocale(locales) {
         if (!locales.length) return;
-        getJSON(locales.shift() + '.json', function(json) {
+        getJSON('locale/' + locales.shift() + '.json', function(json) {
           if (json) return strings = json;
           loadNextLocale(locales);
         });
