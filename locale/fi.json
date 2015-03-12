@@ -7,8 +7,8 @@
   "newTabBehind": "Avaa ”{href}” uudella välilehdellä nykyisen takana",
   "download": "Lataa ”{href}”",
   "menu": "Näytä valikko kohteelle ”{href}”",
-  "readingList": "Add “{href}” to Reading List",
-  "newWindow": "Open “{href}” in a new window",
+  "readingList": "Lisää ”{href}” lukulistalle",
+  "newWindow": "Avaa ”{href}” uudessa ikkunassa",
   "newTab": "Avaa ”{href}” uudella välilehdellä",
   "go": "Siirry kohteeseen ”{href}”"
 }
