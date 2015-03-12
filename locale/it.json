@@ -9,8 +9,6 @@
   "menu": "Mostra un menu per “{href}”",
   "readingList": "Aggiungi “{href}” a Elenco Lettura",
   "newWindow": "Apri “{href}” in una nuova finestra",
-  "newTab": "Open “{href}” in un nuovo pannello",
+  "newTab": "Apri “{href}” in un nuovo pannello",
   "go": "Collegati a “{href}”"
 }
-
-        
