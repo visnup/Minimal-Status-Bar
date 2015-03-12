@@ -7,6 +7,8 @@
   "newTabBehind": "Ouvrir « {href} » dans un nouvel onglet en arrière-plan",
   "download": "Télécharger « {href} »",
   "menu": "Afficher un menu pour « {href} »",
+  "readingList": "Add « {href} » to Reading List",
+  "newWindow": "Open « {href} » in a new window",
   "newTab": "Ouvrir « {href} » dans un nouvel onglet",
   "go": "Ouvrir « {href} »"
 }

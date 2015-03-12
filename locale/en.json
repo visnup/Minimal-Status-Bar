@@ -7,6 +7,8 @@
   "newTabBehind": "Open “{href}” in a new tab behind the current one",
   "download": "Download “{href}”",
   "menu": "Display a menu for “{href}”",
+  "readingList": "Add “{href}” to Reading List",
+  "newWindow": "Open “{href}” in a new window",
   "newTab": "Open “{href}” in a new tab",
   "go": "Go to “{href}”"
 }

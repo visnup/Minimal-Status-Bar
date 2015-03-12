@@ -30,10 +30,21 @@
         }
       }, false);
 
+      var keyMap = {
+        'false,false,false': 'go',
+        'false,false,true':  'readingList',
+        'false,true,false':  'download',
+        'false,true,true':   'go',
+        'true,false,false':  'newTabBehind',
+        'true,false,true':   'newTab',
+        'true,true,false':   'newWindowBehind',
+        'true,true,true':    'newWindow',
+      };
       function getStatus(options) {
         var absoluteURL = safari.extension.settings.absoluteURL
           , href = decodeURIComponent((absoluteURL ? options.href : options.hrefRelative).trim().replace(/\n/g, ' '))
-          , email = href.match(/^mailto:([^?]+)(\?subject=([^&]+))?/i);
+          , email = href.match(/^mailto:([^?]+)(\?subject=([^&]+))?/i)
+          , keys = [options.metaKey, options.altKey, options.shiftKey];
 
         if (email) {
           if (email[3]) {
@@ -42,20 +53,10 @@
           } else {
             return strings.email.to.replace(/{to}/g, email[1]);
           }
-        } else if (options.metaKey) {
-          if (options.altKey) {
-            return strings.newWindowBehind.replace(/{href}/g, href);
-          } else {
-            return strings.newTabBehind.replace(/{href}/g, href);
-          }
-        } else if (options.altKey) {
-          return strings.download.replace(/{href}/g, href);
         } else if (options.ctrlKey) {
-          return strings.menu.replace(/{href}/g, href);
-        } else if (options.target && options.target !== '_self') {
-          return strings.newTab.replace(/{href}/g, href);
+          return strings['menu'].replace(/{href}/g, href);
         } else {
-          return strings.go.replace(/{href}/g, href);
+          return strings[keyMap[keys]].replace(/{href}/g, href);
         }
       }
 

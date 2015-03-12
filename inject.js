@@ -39,7 +39,8 @@ function mouseover(e) {
       target: el.target,
       metaKey: e.metaKey,
       ctrlKey: e.ctrlKey,
-      altKey: e.altKey
+      altKey: e.altKey,
+      shiftKey: e.shiftKey
     });
   } else {
     safari.self.tab.dispatchMessage('mouseout');
@@ -48,6 +49,9 @@ function mouseover(e) {
 
 function keyChanged(e) {
   switch (e.keyCode) {
+    case 16:
+      safari.self.tab.dispatchMessage('mouseover', { shiftKey: e.shiftKey });
+      break;
     case 17:
       safari.self.tab.dispatchMessage('mouseover', { ctrlKey: e.ctrlKey });
       break;
