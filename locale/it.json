@@ -1,0 +1,14 @@
+{
+  "email": {
+    "to": "Invia e-mail a {to}",
+    "subject": "Invia e-mail a {to} con oggetto “{subject}”"
+  },
+  "newWindowBehind": "Apri “{href}” in una nuova finestra dietro quella attuale",
+  "newTabBehind": "Apri “{href}” in un nuovo pannello dietro quello attuale",
+  "download": "Scarica “{href}”",
+  "menu": "Mostra un menu per “{href}”",
+  "readingList": "Aggiungi “{href}” a Elenco Lettura",
+  "newWindow": "Apri “{href}” in una nuova finestra",
+  "newTab": "Apri “{href}” in un nuovo pannello",
+  "go": "Collegati a “{href}”"
+}
