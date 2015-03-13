@@ -39,8 +39,14 @@ Philosophy
    look and feel, this will match only the latest. You might try [previous revisions][4]
    if you're trying to match older Safari versions.
 
-Contributors
+Contributing
 ------------
+
+Minimal Status Bar is written in JavaScript, HTML, and CSS. If you'd like to
+contribute, you are invited to [open a pull request][5]. We could always use
+more translators to add [localizations][6]!
+
+Tests: [![Circle CI](https://circleci.com/gh/visnup/Minimal-Status-Bar.svg?style=svg&circle-token=0f6d76e639b4f584ec551ae593abd713c6c669a9)](https://circleci.com/gh/visnup/Minimal-Status-Bar)
 
  - Visnu Pitiyanuvath ([visnup](https://github.com/visnup))
  - Zak Johnson ([zakj](https://github.com/zakj))
@@ -56,3 +62,5 @@ Contributors
 [2]: https://github.com/visnup/Minimal-Status-Bar/releases/download/v1.14/Minimal-Status-Bar-1.14.safariextz
 [3]: http://ultimatestatusbar.com/
 [4]: https://github.com/visnup/Minimal-Status-Bar/releases
+[5]: https://github.com/visnup/Minimal-Status-Bar/pulls
+[6]: https://github.com/visnup/Minimal-Status-Bar/tree/master/locale
