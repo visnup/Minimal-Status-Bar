@@ -31,14 +31,14 @@
       }, false);
 
       var keyMap = {
-        'false,false,false': 'go',
-        'false,false,true':  'readingList',
-        'false,true,false':  'download',
-        'false,true,true':   'go',
-        'true,false,false':  'newTabBehind',
-        'true,false,true':   'newTab',
-        'true,true,false':   'newWindowBehind',
-        'true,true,true':    'newWindow',
+        '0,0,0': 'go',
+        '0,0,1': 'readingList',
+        '0,1,0': 'download',
+        '0,1,1': 'go',
+        '1,0,0': 'newTabBehind',
+        '1,0,1': 'newTab',
+        '1,1,0': 'newWindowBehind',
+        '1,1,1': 'newWindow',
       };
       function getStatus(options) {
         var absoluteURL = safari.extension.settings.absoluteURL,
@@ -59,7 +59,7 @@
           }
         } else {
           var keys = [options.metaKey, options.altKey, options.shiftKey];
-          return strings[keyMap[keys]].replace(/{href}/g, href);
+          return strings[keyMap[keys.map(Number)]].replace(/{href}/g, href);
         }
       }
 
