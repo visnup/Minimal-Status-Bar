@@ -61,6 +61,7 @@ function keyChanged(e) {
       safari.self.tab.dispatchMessage('mouseover', { altKey: e.altKey });
       break;
     case 91:
+    case 93:
       safari.self.tab.dispatchMessage('mouseover', { metaKey: e.metaKey });
       break;
   }
