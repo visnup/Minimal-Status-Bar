@@ -3,7 +3,7 @@
     "to": "Lähetä sähköpostia osoitteeseen {to}",
     "subject": "Lähetä sähköpostia henkilölle {to} aiheella ”{subject}”"
   },
-  "script": "Suorita skripti “{src}”",
+  "script": "Suorita skripti ”{src}”",
   "newWindowBehind": "Avaa ”{href}” uudessa ikkunassa nykyisen takana",
   "newTabBehind": "Avaa ”{href}” uudella välilehdellä nykyisen takana",
   "download": "Lataa ”{href}”",
