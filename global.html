@@ -58,8 +58,11 @@
             return strings.email.to.replace(/{to}/g, email[1]);
           }
         } else {
-          var keys = [options.metaKey, options.altKey, options.shiftKey];
-          return strings[keyMap[keys.map(Number)]].replace(/{href}/g, href);
+          var keys = [options.metaKey, options.altKey, options.shiftKey],
+              key = keyMap[keys.map(Number)];
+          if (options.target && options.target !== '_self' && key === 'go')
+            key = 'newTab';
+          return strings[key].replace(/{href}/g, href);
         }
       }
 
