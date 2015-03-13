@@ -4,7 +4,7 @@
   "description": "a minimal (Google Chrome-like) status bar for Safari",
   "main": "inject.js",
   "scripts": {
-    "test": "node locale/*.json"
+    "test": "node locale/*.json && jshint --extract=auto inject.js global.html"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/visnup/Minimal-Status-Bar/issues"
   },
-  "homepage": "https://github.com/visnup/Minimal-Status-Bar"
+  "homepage": "https://github.com/visnup/Minimal-Status-Bar",
+  "devDependencies": {
+    "jshint": "^2.6.3"
+  }
 }

@@ -5,8 +5,10 @@ if (window.top === window) {
     switch (e.name) {
       case 'displayStatus':
         displayStatus(e.message);
+        break;
       case 'hideStatus':
         hideStatus();
+        break;
     }
   }, false);
 
@@ -105,5 +107,5 @@ function hideStatus() {
 
   statusBar.classList.remove('active');
   document.body.removeEventListener('keydown', keyChanged);
-  document.body.removeEventListener('keyup', keyChanged)
+  document.body.removeEventListener('keyup', keyChanged);
 }
