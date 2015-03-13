@@ -9,7 +9,7 @@
   "download": "Descargar “{href}”",
   "menu": "Mostrar un menú para “{href}”",
   "readingList": "Añadir “{href}” a la lista de lectura",
-  "newWindow": "Open “{href}” in a new window",
+  "newWindow": "Abrir “{href}” en una ventana nueva",
   "newTab": "Abrir “{href}” en una pestaña nueva",
   "go": "Ir a “{href}”"
 }
