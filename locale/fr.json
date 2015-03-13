@@ -3,12 +3,13 @@
     "to": "Adresser un e-mail à {to}",
     "subject": "Envoyer à {to} un e-mail dont l’objet est « {subject} »"
   },
+  "script": "Lancer le script « {src} »",
   "newWindowBehind": "Ouvrir « {href} » dans une nouvelle fenêtre en arrière-plan",
   "newTabBehind": "Ouvrir « {href} » dans un nouvel onglet en arrière-plan",
   "download": "Télécharger « {href} »",
   "menu": "Afficher un menu pour « {href} »",
-  "readingList": "Add « {href} » to Reading List",
-  "newWindow": "Open « {href} » in a new window",
+  "readingList": "Ajouter « {href} » à la liste de lecture",
+  "newWindow": "Ouvrir « {href} » dans une nouvelle fenêtre",
   "newTab": "Ouvrir « {href} » dans un nouvel onglet",
   "go": "Ouvrir « {href} »"
 }

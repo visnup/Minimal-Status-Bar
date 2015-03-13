@@ -3,6 +3,7 @@
     "to": "Invia e-mail a {to}",
     "subject": "Invia e-mail a {to} con oggetto “{subject}”"
   },
+  "script": "Eseguo lo script “{src}”",
   "newWindowBehind": "Apri “{href}” in una nuova finestra dietro quella attuale",
   "newTabBehind": "Apri “{href}” in un nuovo pannello dietro quello attuale",
   "download": "Scarica “{href}”",

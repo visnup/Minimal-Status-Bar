@@ -3,11 +3,12 @@
     "to": "Enviar mensaje de correo a {to}",
     "subject": "Enviar mensaje de correo a {to} con el asunto “{subject}”"
   },
+  "script": "Ejecutar script “{src}”",
   "newWindowBehind": "Abrir “{href}” en ventana nueva detrás de la ventana actual",
   "newTabBehind": "Abrir “{href}” en una pestaña nueva detrás de la pestaña actual",
   "download": "Descargar “{href}”",
   "menu": "Mostrar un menú para “{href}”",
-  "readingList": "Add “{href}” to Reading List",
+  "readingList": "Añadir “{href}” a la lista de lectura",
   "newWindow": "Open “{href}” in a new window",
   "newTab": "Abrir “{href}” en una pestaña nueva",
   "go": "Ir a “{href}”"
