@@ -60,7 +60,7 @@ Tests: [![Circle CI](https://circleci.com/gh/visnup/Minimal-Status-Bar.svg?style
  - ([poweruser82](https://github.com/poweruser82))
 
 [1]: https://github.com/visnup/Minimal-Status-Bar/issues
-[2]: https://github.com/visnup/Minimal-Status-Bar/releases/download/v1.14/Minimal-Status-Bar-1.14.safariextz
+[2]: https://github.com/visnup/Minimal-Status-Bar/releases/download/v1.15/Minimal-Status-Bar-1.15.safariextz
 [3]: http://ultimatestatusbar.com/
 [4]: https://github.com/visnup/Minimal-Status-Bar/releases
 [5]: https://github.com/visnup/Minimal-Status-Bar/pulls
