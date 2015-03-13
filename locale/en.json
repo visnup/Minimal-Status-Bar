@@ -3,6 +3,7 @@
     "to": "Send email to {to}",
     "subject": "Send email to {to} with subject “{subject}”"
   },
+  "script": "Run script “{src}”",
   "newWindowBehind": "Open “{href}” in a new window behind the current window",
   "newTabBehind": "Open “{href}” in a new tab behind the current one",
   "download": "Download “{href}”",

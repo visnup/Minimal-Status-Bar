@@ -44,18 +44,21 @@
         var absoluteURL = safari.extension.settings.absoluteURL
           , href = decodeURIComponent((absoluteURL ? options.href : options.hrefRelative).trim().replace(/\n/g, ' '))
           , email = href.match(/^mailto:([^?]+)(\?subject=([^&]+))?/i)
-          , keys = [options.metaKey, options.altKey, options.shiftKey];
+          , script = href.match(/^javascript:(.*)/);
 
-        if (email) {
+        if (options.ctrlKey) {
+          return strings.menu.replace(/{href}/g, href);
+        } else if (script) {
+          return strings.script.replace(/{src}/g, script[1]);
+        } else if (email) {
           if (email[3]) {
             return strings.email.subject.replace(/{to}/g, email[1])
                                         .replace(/{subject}/g, decodeURIComponent(email[3]));
           } else {
             return strings.email.to.replace(/{to}/g, email[1]);
           }
-        } else if (options.ctrlKey) {
-          return strings['menu'].replace(/{href}/g, href);
         } else {
+          var keys = [options.metaKey, options.altKey, options.shiftKey];
           return strings[keyMap[keys]].replace(/{href}/g, href);
         }
       }
