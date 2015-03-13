@@ -1,8 +1,8 @@
 div#com-fortnight-status-bar {
   background: linear-gradient(180deg, hsl(0, 0%, 92%) 0, hsl(0, 0%, 86%) 1px, hsl(0, 0%, 85%)) !important;
+  border: solid 1px hsl(0, 0%, 52%) !important;
   border-left-width: 0 !important;
   border-radius: 0 3px 0 0 !important;
-  border: solid 1px hsl(0, 0%, 52%) !important;
   bottom: -1px !important;
   color: hsl(300, 2%, 10%) !important;
   font: 8pt Helvetica Neue !important;
@@ -18,8 +18,7 @@ div#com-fortnight-status-bar {
   position: fixed !important;
   text-overflow: ellipsis !important;
   text-rendering: optimizeLegibility !important;
-  transition-delay: 50ms !important;
-  transition: opacity 100ms ease-out !important;
+  transition: 50ms 100ms opacity ease-out !important;
   white-space: nowrap !important;
   width: auto !important;
   z-index: 2147483647 !important;
@@ -35,7 +34,7 @@ div#com-fortnight-status-bar {
 
 div#com-fortnight-status-bar.active {
   opacity: 1 !important;
-  transition: opacity 100ms ease-in !important;
+  transition: 100ms opacity ease-in !important;
 }
 
 div#com-fortnight-status-bar.blur {
