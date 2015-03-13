@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/visnup/Minimal-Status-Bar/issues"
   },
-  "homepage": "https://github.com/visnup/Minimal-Status-Bar"
+  "homepage": "https://github.com/visnup/Minimal-Status-Bar",
+  "devDependencies": {
+    "jshint": "^2.6.3"
+  }
 }
