@@ -57,6 +57,7 @@ Tests: [![Circle CI](https://circleci.com/gh/visnup/Minimal-Status-Bar.svg?style
  - David Gouch ([gouch](https://github.com/gouch))
  - Kasper Hirvikoski ([kasper](https://github.com/kasper))
  - Héctor López Carral ([Kyze](https://github.com/Kyze))
+ - ([poweruser82](https://github.com/poweruser82))
 
 [1]: https://github.com/visnup/Minimal-Status-Bar/issues
 [2]: https://github.com/visnup/Minimal-Status-Bar/releases/download/v1.14/Minimal-Status-Bar-1.14.safariextz
