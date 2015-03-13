@@ -41,10 +41,10 @@
         'true,true,true':    'newWindow',
       };
       function getStatus(options) {
-        var absoluteURL = safari.extension.settings.absoluteURL
-          , href = decodeURIComponent((absoluteURL ? options.href : options.hrefRelative).trim().replace(/\n/g, ' '))
-          , email = href.match(/^mailto:([^?]+)(\?subject=([^&]+))?/i)
-          , script = href.match(/^javascript:(.*)/);
+        var absoluteURL = safari.extension.settings.absoluteURL,
+            href = decodeURIComponent((absoluteURL ? options.href : options.hrefRelative).trim().replace(/\n/g, ' ')),
+            email = href.match(/^mailto:([^?]+)(\?subject=([^&]+))?/i),
+            script = href.match(/^javascript:(.*)/);
 
         if (options.ctrlKey) {
           return strings.menu.replace(/{href}/g, href);
@@ -67,8 +67,10 @@
       (function loadNextLocale(locales) {
         if (!locales.length) return;
         getJSON('locale/' + locales.shift() + '.json', function(json) {
-          if (json) return strings = json;
-          loadNextLocale(locales);
+          if (json)
+            strings = json;
+          else
+            loadNextLocale(locales);
         });
       })([ navigator.language, navigator.language.split('-')[0], 'en' ]);
 
@@ -86,7 +88,7 @@
       }
 
       function getJSON(url, callback) {
-        var xhr = new XMLHttpRequest;
+        var xhr = new XMLHttpRequest();
         xhr.open('GET', url);
         xhr.onreadystatechange = function(e) {
           if (xhr.readyState === 4 && (xhr.status === 200 || xhr.status === 0))
