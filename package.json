@@ -4,7 +4,7 @@
   "description": "a minimal (Google Chrome-like) status bar for Safari",
   "main": "inject.js",
   "scripts": {
-    "test": "node locale/*.json"
+    "test": "node locale/*.json && jshint --extract=auto inject.js global.html"
   },
   "repository": {
     "type": "git",
