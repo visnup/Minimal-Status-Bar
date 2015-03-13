@@ -1,0 +1,19 @@
+{
+  "name": "Minimal-Status-Bar.safariextension",
+  "version": "1.14.0",
+  "description": "a minimal (Google Chrome-like) status bar for Safari",
+  "main": "inject.js",
+  "scripts": {
+    "test": "node locale/*.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/visnup/Minimal-Status-Bar.git"
+  },
+  "author": "Visnu Pitiyanuvath",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/visnup/Minimal-Status-Bar/issues"
+  },
+  "homepage": "https://github.com/visnup/Minimal-Status-Bar"
+}
