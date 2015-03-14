@@ -1,0 +1,15 @@
+{
+  "email": {
+    "to": "E-Mail an {to} senden",
+    "subject": "E-mail an {to} senden mit dem Betreff „{subject}”"
+  },
+  "script": "Skript „{src}“ ausführen",
+  "newWindowBehind": "„{href}“ in neuem Fenster hinter dem Aktiven öffnen",
+  "newTabBehind": "„{href}“ in neuem Tab hinter dem Aktiven öffnen",
+  "download": "„{href}“ laden",
+  "menu": "Menü für „{href}“ anzeigen",
+  "readingList": "„{href}“ zur Leseliste hinzufügen",
+  "newWindow": "„{href}“ in neuem Fenster öffnen",
+  "newTab": "„{href}“ in neuem Tab öffnen",
+  "go": "Gehe zu „{href}“"
+}
