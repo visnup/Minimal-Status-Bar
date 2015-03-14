@@ -28,6 +28,6 @@ something valuable to add or change.
 
 ## Inspiration
 
-This contribution philosphy is totally copied from [rvagg's levelup][1].
+This contribution philosophy is totally copied from [rvagg's levelup][1].
 
 [1]: https://github.com/rvagg/node-levelup/blob/master/CONTRIBUTING.md
