@@ -11,9 +11,10 @@
 
       var now = new Date();
       data.forEach(function(d) {
-        var created_at = d3.time.format.iso.parse(d.assets[0].created_at),
+        var asset = d.assets[0],
+            created_at = d3.time.format.iso.parse(asset.created_at),
             days = (now - created_at) / 1000 / 60 / 60 / 24;
-        d.assets[0].download_count_per_day = d.assets[0].download_count / days;
+        asset.download_count_per_day = asset.download_count / days;
       });
 
       var margin = { top: 0, right: 20.5, bottom: 20.5, left: 250.5 },
