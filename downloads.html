@@ -1,0 +1,113 @@
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+  <script>
+    /* jshint lastsemic: true */
+    d3.json('https://api.github.com/repos/visnup/Minimal-Status-Bar/releases', function(data) {
+      var numberFormat = d3.format(',.0f');
+      var descriptions = {
+        download_count: 'Total number of downloads by release.',
+        download_count_per_day: 'Average number of downloads per day since the given release has been live. This number will naturally decrease over time for older releases as users pick up new releases. This is a proxy for the adoption rate of new releases using the only data I have available from GitHub.'
+      };
+
+      var now = new Date();
+      data.forEach(function(d) {
+        var created_at = d3.time.format.iso.parse(d.assets[0].created_at),
+            days = (now - created_at) / 1000 / 60 / 60 / 24;
+        asset.download_count_per_day = d.assets[0].download_count / days;
+      });
+
+      var margin = { top: 0, right: 20.5, bottom: 20.5, left: 250.5 },
+          width = 800 - margin.left - margin.right,
+          height = (data.length*40) - margin.top - margin.bottom;
+
+      var measures = d3.select('body').selectAll('.measure')
+        .data(['download_count', 'download_count_per_day'])
+        .enter().append('div')
+          .attr('class', 'measure')
+          .style('width', width + margin.left + margin.right);
+      measures.append('h1')
+        .style('padding-left', margin.left)
+        .text(String);
+      measures.append('p')
+        .style('padding-left', margin.left)
+        .text(function(d) { return descriptions[d] });
+      measures.append('svg')
+        .attr('width', width + margin.left + margin.right)
+        .attr('height', height + margin.top + margin.bottom)
+        .each(function(measure) {
+
+        var chart = d3.select(this).append('g')
+          .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+        var x = d3.scale.linear()
+          .domain([0, d3.max(data, function(d) { return d.assets[0][measure] })])
+          .range([0, width])
+          .nice();
+        var xAxis = d3.svg.axis()
+          .scale(x);
+        chart.append('g')
+          .attr('class', 'x axis')
+          .attr('transform', 'translate(0 ' + height + ')')
+          .call(xAxis);
+
+        var y = d3.scale.ordinal()
+          .domain(data.map(function(d) { return d.name }))
+          .rangeRoundBands([0, height], 0.1);
+        var yAxis = d3.svg.axis()
+          .scale(y)
+          .tickSize(0)
+          .orient('left');
+        chart.append('g')
+          .attr('class', 'y axis')
+          .call(yAxis);
+
+        var bars = chart.selectAll('rect.bar')
+          .data(data)
+          .enter().append('rect')
+            .attr('class', 'bar')
+            .attr('x', 0)
+            .attr('y', function(d) { return y(d.name) })
+            .attr('width', function(d) { return x(d.assets[0][measure]) })
+            .attr('height', y.rangeBand());
+
+        var labels = chart.selectAll('text.label')
+          .data(data)
+          .enter().append('text')
+            .attr('class', 'label')
+            .attr('x', function(d) { return x(d.assets[0][measure]) })
+            .attr('y', function(d) { return y(d.name) + y.rangeBand()/2 })
+            .attr('dx', 3)
+            .attr('dy', '.32em')
+            .text(function(d) { return numberFormat(d.assets[0][measure]) });
+
+      });
+    });
+  </script>
+  <style>
+    body {
+      font: small Helvetica Neue;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+
+    .measure {
+      margin: 3em auto;
+      text-align: left;
+    }
+
+    h1 {
+      font-weight: normal;
+    }
+
+    .axis line, .axis path {
+      fill: none;
+      stroke: #000;
+      shape-rendering: crispEdges;
+    }
+    rect.bar {
+      fill: hsla(0, 0%, 0%, .3);
+      shape-rendering: crispEdges;
+    }
+  </style>
+</body>
