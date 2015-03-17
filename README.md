@@ -48,6 +48,8 @@ more translators to add [localizations][6]!
 
 Tests: [![Circle CI](https://circleci.com/gh/visnup/Minimal-Status-Bar.svg?style=svg&circle-token=0f6d76e639b4f584ec551ae593abd713c6c669a9)](https://circleci.com/gh/visnup/Minimal-Status-Bar)
 
+[Download statistics](http://visnup.github.io/Minimal-Status-Bar/downloads)
+
  - Visnu Pitiyanuvath ([visnup](https://github.com/visnup))
  - Zak Johnson ([zakj](https://github.com/zakj))
  - Michael Bailey ([mb3](https://github.com/mb3))
