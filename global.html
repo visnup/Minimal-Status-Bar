@@ -43,7 +43,7 @@
       function getStatus(options) {
         var absoluteURL = safari.extension.settings.absoluteURL,
             href = decodeURIComponent((absoluteURL ? options.href : options.hrefRelative).trim().replace(/\n/g, ' ')),
-            email = href.match(/^mailto:([^?]+)(\?subject=([^&]+))?/i),
+            email = href.match(/^mailto:([^?]*)(\?subject=([^&]+))?/i),
             script = href.match(/^javascript:(.*)/);
 
         if (options.ctrlKey) {
