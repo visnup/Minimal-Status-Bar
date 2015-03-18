@@ -1,7 +1,7 @@
 {
   "email": {
     "to": "E-Mail an {to} senden",
-    "subject": "E-mail an {to} senden mit dem Betreff „{subject}”"
+    "subject": "E-Mail an {to} senden mit dem Betreff „{subject}”"
   },
   "script": "Skript „{src}“ ausführen",
   "newWindowBehind": "„{href}“ in neuem Fenster hinter dem Aktiven öffnen",
