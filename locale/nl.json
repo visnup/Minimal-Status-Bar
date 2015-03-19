@@ -1,0 +1,15 @@
+{
+  "email": {
+    "to": "E-mail naar {to} versturen",
+    "subject": "Stuur e-mail naar {to} met als onderwerp ‘{subject}’"
+  },
+  "script": "Script ‘{src}’ uitvoeren",
+  "newWindowBehind": "‘{href}’ openen in een nieuw venster achter het huidige venster",
+  "newTabBehind": "‘{href}’ openen in een nieuw tabblad achter het huidige tabblad",
+  "download": "‘{href}’ downloaden",
+  "menu": "Een menu weergeven voor ‘{href}’",
+  "readingList": "Voeg ‘{href}’ toe aan leeslijst",
+  "newWindow": "‘{href}’ openen in een nieuw venster",
+  "newTab": "‘{href}’ openen in een nieuw tabblad",
+  "go": "‘{href}’ openen"
+}
