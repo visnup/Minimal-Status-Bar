@@ -44,13 +44,27 @@ Contributing
 
 Minimal Status Bar is written in JavaScript, HTML, and CSS. If you'd like to
 contribute, you are invited to [open a pull request][5]. We could always use
-more translators to add [languages][6]!
-
-Thank you to all [contributors](https://github.com/visnup/Minimal-Status-Bar/graphs/contributors)!
+more translators to add [localizations][6]!
 
 Tests: [![Circle CI](https://circleci.com/gh/visnup/Minimal-Status-Bar.svg?style=svg&circle-token=0f6d76e639b4f584ec551ae593abd713c6c669a9)](https://circleci.com/gh/visnup/Minimal-Status-Bar)
 
 [Download statistics](http://visnup.github.io/Minimal-Status-Bar/downloads)
+
+Contributors
+------------
+
+ - Visnu Pitiyanuvath ([visnup](https://github.com/visnup))
+ - Zak Johnson ([zakj](https://github.com/zakj))
+ - Michael Bailey ([mb3](https://github.com/mb3))
+ - Bjørn Rostad ([bearroast](https://github.com/bearroast))
+ - Mike Fitzgerald ([fitzymj](https://github.com/fitzymj))
+ - Vladimir Kucherenko ([VFK](https://github.com/VFK))
+ - David Gouch ([gouch](https://github.com/gouch))
+ - Kasper Hirvikoski ([kasper](https://github.com/kasper))
+ - Héctor López Carral ([Kyze](https://github.com/Kyze))
+ - ([poweruser82](https://github.com/poweruser82))
+ - Sven Lamers ([capfuji](https://github.com/capfuji))
+ - ([vSh1ny](https://github.com/vSh1ny))
 
 [1]: https://github.com/visnup/Minimal-Status-Bar/issues
 [2]: https://github.com/visnup/Minimal-Status-Bar/releases/download/v1.15/Minimal-Status-Bar-1.15.safariextz
