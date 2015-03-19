@@ -1,6 +1,6 @@
 {
   "name": "Minimal-Status-Bar.safariextension",
-  "version": "1.15.0",
+  "version": "1.16.0",
   "description": "a minimal (Google Chrome-like) status bar for Safari",
   "main": "inject.js",
   "scripts": {

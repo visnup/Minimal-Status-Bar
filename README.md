@@ -67,7 +67,7 @@ Contributors
  - ([vSh1ny](https://github.com/vSh1ny))
 
 [1]: https://github.com/visnup/Minimal-Status-Bar/issues
-[2]: https://github.com/visnup/Minimal-Status-Bar/releases/download/v1.15/Minimal-Status-Bar-1.15.safariextz
+[2]: https://github.com/visnup/Minimal-Status-Bar/releases/download/v1.16/Minimal-Status-Bar-1.16.safariextz
 [3]: http://ultimatestatusbar.com/
 [4]: https://github.com/visnup/Minimal-Status-Bar/releases
 [5]: https://github.com/visnup/Minimal-Status-Bar/pulls
