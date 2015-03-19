@@ -1,0 +1,15 @@
+{
+  "email": {
+    "to": "Skicka e-brev till {to}",
+    "subject": "Skicka e-brev till {to} med ämnet ”{subject}”"
+  },
+  "script": "Kör skriptet ”{src}”",
+  "newWindowBehind": "Öppna ”{href}” i ett nytt fönster bakom det nuvarande",
+  "newTabBehind": "Öppna ”{href}” i en ny flik bakom den nuvarande",
+  "download": "Hämta ”{href}”",
+  "menu": "Visa en meny för ”{href}”",
+  "readingList": "Lägg till ”{href}” i läslistan",
+  "newWindow": "Öppna ”{href}” i ett nytt fönster",
+  "newTab": "Öppna ”{href}” i en ny flik",
+  "go": "Gå till ”{href}”"
+}
