@@ -44,7 +44,7 @@ Contributing
 
 Minimal Status Bar is written in JavaScript, HTML, and CSS. If you'd like to
 contribute, you are invited to [open a pull request][5]. We could always use
-more translators to add [localizations][6]!
+more translators to add [translations][6]!
 
 Tests: [![Circle CI](https://circleci.com/gh/visnup/Minimal-Status-Bar.svg?style=svg&circle-token=0f6d76e639b4f584ec551ae593abd713c6c669a9)](https://circleci.com/gh/visnup/Minimal-Status-Bar)
 
