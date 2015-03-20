@@ -18,6 +18,7 @@ div#com-fortnight-status-bar {
   position: fixed !important;
   text-overflow: ellipsis !important;
   text-rendering: optimizeLegibility !important;
+  text-shadow: none !important;
   transition: 50ms 100ms opacity ease-out !important;
   white-space: nowrap !important;
   width: auto !important;
