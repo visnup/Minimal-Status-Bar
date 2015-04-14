@@ -31,7 +31,7 @@ function ready() { document.body.addEventListener('mouseover', mouseover); }
 
 function mouseover(e) {
   el = e.target;
-  while (el && el.nodeName !== 'A')
+  while (el && el.nodeName.toLowerCase() !== 'a')
     el = el.parentNode;
 
   if (el && el.attributes.href) {
