@@ -65,6 +65,7 @@ Contributors
  - ([poweruser82](https://github.com/poweruser82))
  - Sven Lamers ([capfuji](https://github.com/capfuji))
  - ([vSh1ny](https://github.com/vSh1ny))
+ - Martijn van der Ven ([Zegnat](https://github.com/Zegnat))
 
 [1]: https://github.com/visnup/Minimal-Status-Bar/issues
 [2]: https://github.com/visnup/Minimal-Status-Bar/releases/download/v1.16/Minimal-Status-Bar-1.16.safariextz
