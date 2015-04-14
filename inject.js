@@ -88,8 +88,8 @@ function displayStatus(text) {
   statusBar.innerText = text;
   setTimeout(function() {
     statusBar.classList.add('active');
-    document.body.addEventListener('keydown', keyChanged);
-    document.body.addEventListener('keyup', keyChanged);
+    document.addEventListener('keydown', keyChanged);
+    document.addEventListener('keyup', keyChanged);
   }, 1);
 
   // If the statusbar overlaps the hovered element, try moving it to the
@@ -107,6 +107,6 @@ function hideStatus() {
   if (!statusBar) return;
 
   statusBar.classList.remove('active');
-  document.body.removeEventListener('keydown', keyChanged);
-  document.body.removeEventListener('keyup', keyChanged);
+  document.removeEventListener('keydown', keyChanged);
+  document.removeEventListener('keyup', keyChanged);
 }
