@@ -13,22 +13,26 @@
                 message[key] = e.message[key];
 
             var s = getStatus(message);
-            e.target.page.dispatchMessage('displayStatus', s);
+            dispatchMessage(e.target, 'displayStatus', s);
 
             if (e.message.href && safari.extension.settings.longURL && !safari.application.privateBrowsing.enabled) {
               // TODO debounce?
               lengthenURL(e.message.href, function(result) {
                 var url = result['long-url'];
-                if (url && url !== e.message.href) e.target.page.dispatchMessage('displayStatus', s + ' (' +  url + ')');
+                if (url && url !== e.message.href) dispatchMessage(e.target, 'displayStatus', s + ' (' +  url + ')');
               });
             }
             break;
 
           case 'mouseout':
-            e.target.page.dispatchMessage('hideStatus');
+            dispatchMessage(e.target, 'hideStatus');
             break;
         }
       }, false);
+
+      function dispatchMessage(to, name, data) {
+        return 'page' in to ? to.page.dispatchMessage(name, data) : to.dispatchMessage(name, data);
+      }
 
       var keyMap = {
         '0,0,0': 'go',
@@ -99,6 +103,9 @@
         };
         xhr.send();
       }
+
+      safari.extension.addContentScriptFromURL(safari.extension.baseURI + 'inject.js', ['safari-reader://*/*'], null, true);
+      safari.extension.addContentStyleSheetFromURL(safari.extension.baseURI + 'style.css', ['safari-reader://*/*'], null, true);
     </script>
   </head>
   <body></body>
