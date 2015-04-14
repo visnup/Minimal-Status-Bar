@@ -15,7 +15,7 @@
             var s = getStatus(message);
             e.target.page.dispatchMessage('displayStatus', s);
 
-            if (safari.extension.settings.longURL && !safari.application.privateBrowsing.enabled) {
+            if (e.message.href && safari.extension.settings.longURL && !safari.application.privateBrowsing.enabled) {
               // TODO debounce?
               lengthenURL(e.message.href, function(result) {
                 var url = result['long-url'];
