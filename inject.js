@@ -22,7 +22,11 @@ if (window.top === window) {
   });
 }
 
-if (document.readyState === 'complete')
+if (
+  document.readyState === 'complete' ||
+  // Reader seems to report 'interactive' and not trigger DOMContentLoaded later.
+  location.protocol === 'safari-reader:' && document.readyState === 'interactive'
+)
   ready();
 else
   document.addEventListener('DOMContentLoaded', ready);
