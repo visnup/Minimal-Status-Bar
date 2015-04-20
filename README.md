@@ -68,7 +68,7 @@ Contributors
  - Martijn van der Ven ([Zegnat](https://github.com/Zegnat))
 
 [1]: https://github.com/visnup/Minimal-Status-Bar/issues
-[2]: https://github.com/visnup/Minimal-Status-Bar/releases/download/v1.16/Minimal-Status-Bar-1.16.safariextz
+[2]: https://github.com/visnup/Minimal-Status-Bar/releases/download/v1.17/Minimal-Status-Bar-1.17.safariextz
 [3]: http://ultimatestatusbar.com/
 [4]: https://github.com/visnup/Minimal-Status-Bar/releases
 [5]: https://github.com/visnup/Minimal-Status-Bar/pulls
