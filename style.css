@@ -11,6 +11,7 @@ div#com-fortnight-status-bar {
   letter-spacing: 0.36px !important;
   margin: 0 !important;
   max-width: 95% !important;
+  min-height: 0 !important;
   opacity: 0 !important;
   overflow: hidden !important;
   padding: 0.20em 12px 0.25em !important;
