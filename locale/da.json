@@ -1,15 +1,15 @@
 {
   "email": {
-    "to": "E-Mail an {to} senden",
-    "subject": "E-Mail an {to} senden mit dem Betreff „{subject}”"
+    "to": "Send e-mail til {to}",
+    "subject": "Send e-mail til {to} med emnet “{subject}”"
   },
-  "script": "Skript „{src}“ ausführen",
-  "newWindowBehind": "„{href}“ in neuem Fenster hinter dem Aktiven öffnen",
-  "newTabBehind": "„{href}“ in neuem Tab hinter dem Aktiven öffnen",
-  "download": "„{href}“ laden",
-  "menu": "Menü für „{href}“ anzeigen",
-  "readingList": "„{href}“ zur Leseliste hinzufügen",
-  "newWindow": "„{href}“ in neuem Fenster öffnen",
-  "newTab": "„{href}“ in neuem Tab öffnen",
-  "go": "Gehe zu „{href}“"
+  "script": "Start instruksen “{src}”",
+  "newWindowBehind": "Åbn “{href}” i et nyt vindue bag det aktuelle",
+  "newTabBehind": "Åbn “{href}” i en ny fane bag den aktuelle",
+  "download": "Overfør “{href}”",
+  "menu": "Vis en menu til “{href}”",
+  "readingList": "Føj “{href}” til læselisten",
+  "newWindow": "Åbn “{href}” i et nyt vindue",
+  "newTab": "Åbn “{href}” i en ny fane",
+  "go": "Gå til “{href}”"
 }
