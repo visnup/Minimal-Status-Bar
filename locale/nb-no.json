@@ -1,0 +1,15 @@
+{
+  "email": {
+    "to": "Send e-post til {to}",
+    "subject": "Send en e-post til {to} med emnet «{subject}»"
+  },
+  "script": "Start prosedyren «{src}»",
+  "newWindowBehind": "Åpne «{href}» i et nytt vindu bak nåværende vindu",
+  "newTabBehind": "Åpne «{href}» i en ny fane bak nåværende fane",
+  "download": "Last ned «{href}»",
+  "menu": "Vis meny for «{href}»",
+  "readingList": "Legg til «{href}» i leselisten",
+  "newWindow": "Åpne «{href}» i et nytt vindu",
+  "newTab": "Åpne «{href}» i en ny fane",
+  "go": "Gå til «{href}»"
+}
