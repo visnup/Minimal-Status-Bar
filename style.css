@@ -1,4 +1,7 @@
-div#com-fortnight-status-bar {
+div#com-fortnight-status-bar,
+div#com-fortnight-status-bar.active,
+div#com-fortnight-status-bar.blur,
+div#com-fortnight-status-bar.right-side {
   background: linear-gradient(180deg, hsl(0, 0%, 92%) 0, hsl(0, 0%, 86%) 1px, hsl(0, 0%, 85%)) !important;
   border: solid 1px hsl(0, 0%, 52%) !important;
   border-left-width: 0 !important;
